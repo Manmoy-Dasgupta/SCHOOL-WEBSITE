@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sun Bright High School</title>
+  <meta name="description" content="Sun Bright High School - Excellence • Growth • Care">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="nav">
+        <div class="brand">
+          <div class="logo"><img src="images/man_school.png" alt="School Logo"></div>
+          <h1>Sun Bright High School</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#profiles">Profiles</a></li>
+          </ul>
+        </nav>
+        <div class="cta">
+          <button class="btn btn-outline" onclick="openLogin()">Login</button>
+          <a class="btn btn-primary" href="#admissions">Apply Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-card">
+          <div class="badges">
+            <span class="badge">2500+ Students</span>
+            <span class="badge">CBSE/State</span>
+            <span class="badge">Sports • Arts • Tech</span>
+          </div>
+          <h2>Welcome to Sun Bright High School</h2>
+          <p>Nurturing young minds with a modern curriculum, experienced teachers, and a supportive community.</p>
+
+          <div class="grid">
+            <div class="card">
+              <h3>Academic Excellence</h3>
+              <p>Experienced faculty, modern labs and focused learning pathways.</p>
+            </div>
+            <div class="card">
+              <h3>Co-curricular</h3>
+              <p>Clubs, sports teams and cultural events that develop creativity.</p>
+            </div>
+            <div class="card">
+              <h3>Safe & Supportive</h3>
+              <p>We maintain a secure environment and student support services.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-column">
+          <div class="hero-card center tour-card">
+            <img src="images/images.jpeg" alt="School Campus">
+            <div class="tour-info">
+              <div>
+                <h3>Virtual Tour</h3>
+                <p class="small muted">Explore our campus facilities</p>
+              </div>
+              <a class="btn btn-primary" href="#contact">Visit Us</a>
+            </div>
+          </div>
+
+          <div class="card notice-card">
+            <h3>Notice Board</h3>
+            <p class="small muted">Admissions open for 2026 | Sports Day: Nov 15, 2025 | PTM: Dec 8, 2025</p>
+            <a class="hint" href="#">See all notices →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+<section id="about" class="about-section">
+  <div class="section-title"><h3>About Our School</h3></div>
+
+  <div class="about-card-ui">
+    <div class="about-left">
+      <h2>Shaping Brighter Futures</h2>
+      <p>
+        At <strong>Sun Bright High School</strong>, we combine modern teaching,
+        creativity, and personal growth. Our learning environment inspires
+        curiosity, compassion, and confidence for life beyond classrooms.
+      </p>
+
+      <ul class="about-points">
+        <li>🔬 Modern science & computer labs</li>
+        <li>🎓 Expert teachers & supportive mentors</li>
+        <li>🎭 Balanced academics, sports & arts</li>
+      </ul>
+
+      <a href="#admissions" class="btn btn-primary">Learn More</a>
+    </div>
+
+    <div class="about-right">
+      <img src="images/back-to-school-2629361.jpg" alt="Students at Sun Bright" />
+    </div>
+  </div>
+</section>
+
+
+      <!-- Activities -->
+      <section id="activities">
+        <div class="section-title"><h3>Activities & Clubs</h3></div>
+        <div class="activities">
+          <div class="activity" style="background-image:url('images/science.jpeg')">
+            <div class="overlay"><strong>Science Club</strong><div class="small">Projects, fairs and robotics</div></div>
+          </div>
+          <div class="activity" style="background-image:url('images/sport.jpeg')">
+            <div class="overlay"><strong>Sports Team</strong><div class="small">Cricket, football, athletics</div></div>
+          </div>
+          <div class="activity" style="background-image:url('images/a&c.png')">
+            <div class="overlay"><strong>Art & Culture</strong><div class="small">Drama, music and painting</div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Profiles -->
+      <section id="profiles">
+        <div class="section-title"><h3>Profiles & Accounts</h3></div>
+        <p class="muted">Students, staff and administrators can log in to view dashboards and notices.</p>
+        <div class="profiles">
+          <div class="profile-card">
+            <div class="avatar">S</div>
+            <div><strong>Student</strong><div class="small muted">View timetable, homework, marks</div></div>
+            <button class="btn" onclick="openLogin('student')">Login</button>
+          </div>
+          <div class="profile-card">
+            <div class="avatar">T</div>
+            <div><strong>Staff</strong><div class="small muted">Manage attendance and notices</div></div>
+            <button class="btn" onclick="openLogin('staff')">Login</button>
+          </div>
+          <div class="profile-card">
+            <div class="avatar">A</div>
+            <div><strong>Admin</strong><div class="small muted">Settings, reports, tools</div></div>
+            <button class="btn" onclick="openLogin('admin')">Login</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Admissions -->
+      <section id="admissions">
+        <div class="section-title"><h3>Admissions</h3></div>
+        <div class="card admission-card">
+          <div class="admission-text">
+            <h3>Apply to Sun Bright</h3>
+            <p class="muted">Fill the quick application form and our admissions team will contact you.</p>
+          </div>
+          <form class="contact-form" onsubmit="event.preventDefault();alert('Application submitted (demo)')">
+            <div class="field"><label>Name</label><input required placeholder="Full name"></div>
+            <div class="field"><label>Phone</label><input required placeholder="Phone number"></div>
+            <div class="field"><label>Class applying for</label>
+              <select><option>Nursery</option><option>1</option><option>6</option><option>9</option></select>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-outline" type="reset">Reset</button>
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="section-title"><h3>Contact Us</h3></div>
+        <div class="contact-grid">
+          <div class="card contact-info">
+            <h4>Get in touch</h4>
+            <p class="muted">Email: info@sunbright.edu | Phone: +91 98765 43210</p>
+            <p class="muted">Address: 123 Sunny Lane, Parasia, India</p>
+            <h4>Office Hours</h4>
+            <p class="small muted">Mon - Fri: 8:00 AM - 4:00 PM</p>
+            <h4>Map</h4>
+            <div class="map-placeholder">Embedded map (placeholder)</div>
+          </div>
+
+          <form class="contact-form" onsubmit="event.preventDefault();alert('Message sent (demo)')">
+            <div class="field"><label>Name</label><input required></div>
+            <div class="field"><label>Email</label><input required type="email"></div>
+            <div class="field"><label>Message</label><textarea rows="5" required></textarea></div>
+            <div class="form-actions"><button class="btn btn-primary" type="submit">Send Message</button></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="small muted">© Sun Bright High School — All rights reserved</div>
+        <div class="footer-links">
+          <a class="hint" href="#">Privacy</a>
+          <a class="hint" href="#">Terms</a>
+          <a class="hint" href="#">Sitemap</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <strong id="loginTitle">Login</strong>
+        <button onclick="closeLogin()" aria-label="Close">✕</button>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <div class="tab active" data-role="student" onclick="switchTab(event)">Student</div>
+        <div class="tab" data-role="staff" onclick="switchTab(event)">Staff</div>
+        <div class="tab" data-role="admin" onclick="switchTab(event)">Admin</div>
+      </div>
+
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <div class="field"><label>Username / Email</label><input id="username" required></div>
+        <div class="field"><label>Password</label><input id="password" type="password" required></div>
+        <div class="login-options">
+          <label><input type="checkbox" id="remember"> Remember me</label>
+          <a href="#" class="hint">Forgot?</a>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-outline" onclick="closeLogin()">Cancel</button>
+          <button class="btn btn-primary" type="submit">Sign In</button>
+        </div>
+      </form>
+
+      <p class="hint">This demo uses front-end-only login. Replace with a secure backend for production.</p>
+    </div>
+  </div>
+
+  <div id="progressBar"></div>
+
+<script src='script.js'></script>
+
+<!-- Add before closing body tag -->
+<a href="#contact" class="fab">✉️</a>
+
+</body>
+</html>
