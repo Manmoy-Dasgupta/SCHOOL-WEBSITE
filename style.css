@@ -627,6 +627,10 @@ a.hint:hover {
   .grid { grid-template-columns: 1fr; }
   .activities { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
+  .nav{flex-direction: column;}
+  .nav .cta{width: 100%;justify-content: space-around;}
+  .btn-primary,.btn-outline{width: 35vw;}
+  .btn-outline{background: #F3EE85;}
 }
 
 @media (max-width: 1000px) {
